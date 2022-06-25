@@ -1,0 +1,16 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as m;
+
+/* header */
+
+.header {
+    text-align: center;
+    margin-top: f.rem(120);
+    margin-bottom: f.rem(75);
+
+    @include m.bp-up(lg) {
+        margin-top: f.rem(130);
+        margin-bottom: f.rem(70);
+    }
+}

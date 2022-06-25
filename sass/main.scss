@@ -1,0 +1,15 @@
+
+// Global styles 
+@forward 'base/reset';
+@forward 'base/globals';
+// @forward 'base/typography';
+@forward 'base/helpers';
+
+// Components
+@forward 'components/buttons';
+
+// Pages & Page Sections
+@forward 'pages/header';
+@forward 'pages/home';
+
+@forward 'pages/footer';

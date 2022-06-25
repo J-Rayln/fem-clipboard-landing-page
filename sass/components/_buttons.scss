@@ -1,0 +1,53 @@
+@use '../utils/variables' as v;
+@use '../utils/functions' as f;
+@use '../utils/mixins' as m;
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    color: v.$color-white;
+    text-decoration: none;
+    font-weight: v.$font-weight-bold;
+    width: 100%;
+    padding: f.rem(15) 0;
+    border-radius: 2rem;
+    transition: background 200ms ease-in-out;
+    
+    &--green {
+        @extend .btn;
+        background-color: v.$color-primary-100;
+        border-bottom: 3px solid v.$color-primary-100;
+        box-shadow: 0px 4px 15px rgba(v.$color-primary-100, 0.5);
+
+        &:hover {
+            background-color: lighten(v.$color-primary-100, 5%);
+        }
+    }
+    
+    &--blue {
+        @extend .btn;
+        background-color: v.$color-primary-200;
+        border-bottom: 3px solid v.$color-primary-200;
+        box-shadow: 0px 4px 15px rgba(v.$color-primary-200, 0.5);
+
+        &:hover {
+            background-color: lighten(v.$color-primary-200, 5%);
+        }
+    }
+    
+    @include m.bp-down(sm) {
+        
+        &:not(:last-child){
+            margin-bottom: f.rem(28);
+        }
+    }
+    
+    @include m.bp-up(lg) {
+        max-width: f.rem(228);
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

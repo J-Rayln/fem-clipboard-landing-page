@@ -1,0 +1,66 @@
+@use 'functions' as f;
+
+// Variables
+// 
+// All variables used throughout the site should be stored in this file.
+
+
+// Colors
+
+// Primary
+$color-primary-100: rgb(38, 186, 164);
+$color-primary-200: hsl(233, 100%, 69%);
+
+// Neutral
+$color-neutral-100: hsl(210, 10%, 33%);
+$color-neutral-200: hsl(201, 11%, 66%);
+$color-neutral-300: hsl(220, 18%, 97%); // this color not included in the original design
+
+// Basic
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+
+
+// Typography
+
+// Font Stacks
+$font-family-body: 'Bai Jamjuree', sans-serif;
+
+// Min/Max Font Sizes
+// - used to calculate Responsive Font Sizes
+$font-size-mobile: f.rem(14);
+$font-size-desktop: f.rem(18);
+
+// Responsive Font Sizes
+// - these variables should be used in the final CSS
+$font-size-body: clamp($font-size-mobile, 0.67rem + .87vw, $font-size-desktop);
+$font-size-h1: clamp(1.75rem, 1.34rem + 1.74vw, 2.25rem);
+$font-size-h2: clamp(1.5rem, 1.29rem + 0.87vw, 1.75rem);
+$font-size-h3: 1.375rem;
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+// Base Padding & Margin
+$padding-x: f.rem(30);
+
+
+// Device Breakpoints & Max Widths
+
+$max-width-desktop: f.rem(1120);
+$max-width-tablet: f.rem(840);
+$max-width-phone: f.rem(325);
+
+$breakpoints-up: (
+    "sm": f.rem(499),
+    "md": f.rem(699),
+    "lg": f.rem(1000),
+    "xl": f.rem(1399)
+);
+
+$breakpoints-down: (
+    "sm": f.rem(374.98),
+    "md": f.rem(599.98),
+    "lg": f.rem(999.98)
+);
