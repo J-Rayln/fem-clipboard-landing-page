@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/J-Rayln/fem-clipboard-landing-page](https://github.com/J-Rayln/fem-clipboard-landing-page)
+- Live Site URL: [https://j-rayln.github.io/fem-clipboard-landing-page/](https://j-rayln.github.io/fem-clipboard-landing-page/)
 
 ## My process
 
